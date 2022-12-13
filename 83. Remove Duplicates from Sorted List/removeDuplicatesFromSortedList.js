@@ -3,12 +3,12 @@ var deleteDuplicates = function(head) {
     // check head and next
     let cur = head;
     while(cur && cur.next){
-        if(cur.vallue === cur.next.val){
+        if(cur.val === cur.next.val){
             cur.next = cur.next.next;
         }else{
             cur = cur.next;
             };
-            return head;
     }
+    return head;
     
 };
